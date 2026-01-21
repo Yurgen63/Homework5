@@ -1,7 +1,9 @@
 import java.sql.SQLOutput;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -16,22 +18,22 @@ public class Main {
         int clientOS = 1; // 0- iOS, 1- Android
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
 
     public static void task2() {
         System.out.println("Задача 2");
-        int clientOS = 0;
-        int yearOfDevice = 2015;
-        if (clientOS == 0 && yearOfDevice <= 2015) {
+        int clientOS = 1;
+        int clientDeviceYear = 2014;
+        if (clientOS == 0 && clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && yearOfDevice > 2015) {
+        } else if (clientOS == 0 && clientDeviceYear > 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1 && yearOfDevice <= 2015) {
+        } else if (clientOS == 1 && clientDeviceYear <= 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS == 1 && yearOfDevice > 2015) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
@@ -95,5 +97,6 @@ public class Main {
                 System.out.println("Нет такого месяца");
         }
     }
+
 
 }
